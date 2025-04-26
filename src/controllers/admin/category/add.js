@@ -4,8 +4,12 @@ const addCategory = async (req, res) => {
 
     try {
         let { name } = req.body
+        name = name.trim()
 
         if (!name) return res.status(400).json({ statusCode: 400, message: "Category Name is required" });
+
+        const oldCategory = await categoryModel.findOne({ name });
+        if (oldCategory) return res.status(400).json({ statusCode: 400, message: "Category already exists" });
 
         const category = new categoryModel({ name });
         await category.save()

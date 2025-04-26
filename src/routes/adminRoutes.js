@@ -8,12 +8,16 @@ import detailPost from "../controllers/admin/post/details.js";
 import deletePost from "../controllers/admin/post/delete.js";
 import updatePost from "../controllers/admin/post/update.js";
 import postByCategory from "../controllers/admin/post/viaCategory.js";
+import deleteCategory from "../controllers/admin/category/delete.js";
+import updateCategory from "../controllers/admin/category/update.js";
 
 const router = express.Router()
 
 router.post("/category/add", addCategory)
 router.get("/category/list", allCategory)
 router.get("/category/:cid", postByCategory)
+router.delete("/category/delete/:cid", deleteCategory)
+router.patch("/category/update/:cid", updateCategory)
 
 router.post("/post/add", upload.single('image'), addPost)
 router.get("/post/list", allPost)

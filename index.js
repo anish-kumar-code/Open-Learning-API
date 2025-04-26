@@ -12,9 +12,13 @@ app.get('/', (req, res) => {
     res.send('This is slash route in index.js file')
 })
 
-app.use('*', (req, res) => {
-    res.status(404).json({ message: 'Route not found' });
-  });
+// app.use('*', (req, res) => {
+//     res.status(404).json({ message: 'Route not found' });
+// });
+
+// app.get('*', (req, res) => {
+//     res.status(404).json({ message: 'Route not found' });
+// });
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

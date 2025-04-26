@@ -13,13 +13,11 @@ app.use(express.urlencoded({extended: true}));
 
 const router = express.Router();
 
-router.get('/one', (req,res)=>{
-    res.send("This is one page in app.js");
-})
-
-
-// app.use('/', router);
 appRoutes(app)
+
+// app.use('*', (req, res) => {
+//     res.status(404).json({ message: 'Route not found' });
+// });
 
 
 export default app;

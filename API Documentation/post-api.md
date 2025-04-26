@@ -19,6 +19,25 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 **Response:**  
 - `Status Code` – 200
 - `Message` – Post added
+```json
+    {
+    "statusCode": 200,
+    "message": "Post added",
+    "post": {
+        "title": "Post 6",
+        "image": {
+            "url": "https://res.cloudinary.com/docogdzqh/image/upload/v1745654774/test-e-commerce/gqrsm2uxzf42dlluah6b.jpg",
+            "public_id": "test-e-commerce/gqrsm2uxzf42dlluah6b"
+        },
+        "description": "Description",
+        "category": "680bdc21439da83ed3c327ce",
+        "status": true,
+        "_id": "680c93fa5b0db50ec9134f2f",
+        "date": "2025-04-26T08:06:18.899Z",
+        "__v": 0
+    }
+}
+    ```
 
 ---
 
@@ -30,6 +49,28 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 - `Status Code` – 200
 - `Message` – Post list
 - `allPosts` – array of posts
+```json
+    {
+    "statusCode": 200,
+    "message": "Post list",
+    "length": 8,
+    "allPosts": [
+        {
+            "image": {
+                "url": "https://res.cloudinary.com/docogdzqh/image/upload/v1745641048/test-e-commerce/j4wi40hze0emnxbogpxb.jpg",
+                "public_id": "test-e-commerce/j4wi40hze0emnxbogpxb"
+            },
+            "_id": "680c5e5d881058ed1cf8bb11",
+            "title": "Post 1",
+            "description": "Description",
+            "category": "680bdc21439da83ed3c327ce",
+            "status": true,
+            "date": "2025-04-26T04:17:33.716Z",
+            "__v": 0
+        }
+    ]
+}
+    ```
 
 ---
 
@@ -43,6 +84,25 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 - `Status Code` – 200
 - `Message` – Post list
 - `post` – object of post details
+```json
+    {
+    "statusCode": 200,
+    "message": "Post list",
+    "post": {
+        "image": {
+            "url": "https://res.cloudinary.com/docogdzqh/image/upload/v1745641048/test-e-commerce/j4wi40hze0emnxbogpxb.jpg",
+            "public_id": "test-e-commerce/j4wi40hze0emnxbogpxb"
+        },
+        "_id": "680c5e5d881058ed1cf8bb11",
+        "title": "Post 1",
+        "description": "Description",
+        "category": "680bdc21439da83ed3c327ce",
+        "status": true,
+        "date": "2025-04-26T04:17:33.716Z",
+        "__v": 0
+    }
+}
+    ```
 
 ---
 
@@ -55,6 +115,12 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 **Response:**
 - `Status Code` – 200
 - `Message` – Post deleted
+```json
+    {
+    "statusCode": 200,
+    "message": "Post deleted"
+}
+    ```
 
 ---
 
@@ -76,6 +142,25 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 **Response:**
 - `Status Code` – 200
 - `Message` – Post updated
+```json
+    {
+    "statusCode": 200,
+    "message": "Post updated",
+    "post": {
+        "image": {
+            "url": "https://res.cloudinary.com/docogdzqh/image/upload/v1745654941/test-e-commerce/oezveybry9ewr7kazner.jpg",
+            "public_id": "test-e-commerce/oezveybry9ewr7kazner"
+        },
+        "_id": "680c5ea8881058ed1cf8bb19",
+        "title": "Post 5",
+        "description": "Change Description",
+        "category": "680bdc21439da83ed3c327ce",
+        "status": true,
+        "date": "2025-04-26T04:18:48.680Z",
+        "__v": 0
+    }
+}
+    ```
 
 ---
 

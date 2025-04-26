@@ -59,7 +59,7 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 ---
 
 ## 5. ♻️ Update Post  
-**Method:** `PATCH` 
+**Method:** `PATCH`   
 **Endpoint:** `/api/admin/post/update/:id`  
 **Headers:**
 - `Content-Type: multipart/form-data`

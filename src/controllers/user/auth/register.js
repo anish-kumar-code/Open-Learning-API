@@ -6,8 +6,11 @@ const registerUser = async (req, res) => {
     try {
         let { name, email, password, phone } = req.body
 
-        const oldUser = await userModel.findOne({ email });
-        if (oldUser) return res.status(400).json({ statusCode: 400, message: "User already registred" });
+        const oldUserEmail = await userModel.findOne({ email });
+        if (oldUserEmail) return res.status(400).json({ statusCode: 400, message: "User already registred with this email" });
+
+        const oldUserPhone = await userModel.findOne({ phone });
+        if (oldUserPhone) return res.status(400).json({ statusCode: 400, message: "User already registred with this phone" });
 
         if (!name) return res.status(400).json({ statusCode: 400, message: "Name is required" });
         if (!email) return res.status(400).json({ statusCode: 400, message: "Email is required" });

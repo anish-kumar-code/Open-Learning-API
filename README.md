@@ -43,7 +43,7 @@ DELETE /api/admin/post/delete/:id       - Delete post
 PATCH  /api/admin/post/update/:id       - Update post
 ```
 
-> ⚠️ For more details, visit the documentation folder inside the project.
+> ⚠️ For more details, visit the API Documentation folder inside the project.
 
 ---
 

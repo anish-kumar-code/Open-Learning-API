@@ -80,7 +80,6 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 ---
 
 ### 📌 Notes:
-- All endpoints are prefixed with `/post`
 - Use `form-data` for image uploads
 - Ensure `category` IDs are valid and pre-created
 

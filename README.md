@@ -43,7 +43,7 @@ DELETE /api/admin/post/delete/:id       - Delete post
 PATCH  /api/admin/post/update/:id       - Update post
 ```
 
-> ⚠️ For more details, visit the documentation folder inside the project.
+> ⚠️ For more details, visit the API Documentation folder inside the project.
 
 ---
 
@@ -68,16 +68,27 @@ PATCH  /api/admin/post/update/:id       - Update post
 
 ## 📌 How to Use This API
 
-- Clone the repository (if available) or directly hit the endpoints
-- Use tools like **Postman** or **Thunder Client** for testing
-- Integrate the endpoints into any frontend project (React, Vue, etc.)
-- Make sure to handle API keys (e.g., for Cloudinary) securely in your environment
+Follow the steps below to test the API using **Postman**:
+
+1. **Open Postman** on your system.
+2. **Enter the Base URL:**
+
+   ```
+   https://test-api-pz0o.onrender.com/
+   ```
+
+3. **Select the HTTP Method** (e.g., `POST`, `GET`, `PATCH`, `DELETE`).
+4. **Enter the Endpoint** in the request URL.
+   - Example: `/api/admin/post/add`
+5. Navigate to the **Body** tab → Select **form-data** → Fill in the required fields.
+6. Add any necessary **headers**:
+   - `Content-Type: multipart/form-data`
+7. Click on the **Send** button.
+8. Check the **response** section to view the result.
 
 ---
 
----
-
-## 🙌 Author
+## 😁 Author
 
 Made with ❤️ by **[Anish Kumar]**
 

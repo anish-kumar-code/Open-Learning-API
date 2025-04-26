@@ -86,5 +86,10 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 
 ---
 
-**Developed by:** ✨ *Anish Kumar*  
+Made with ❤️ by **[Anish Kumar]** 
 **Base URL:** `https://test-api-pz0o.onrender.com/`
+
+### 🌐 **Connect with Me:**
+- [LinkedIn](https://www.linkedin.com/in/itzz-mr-anish/)  
+- [Instagram](https://www.instagram.com/itzz.mr.anish/)  
+- [Portfolio](#) 

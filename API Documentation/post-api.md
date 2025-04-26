@@ -23,37 +23,44 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 ---
 
 ## 2. 📃 Get All Posts  
-**Endpoint:** `GET /post/list`  
+**Method:** `GET`  
+**Endpoint:** `/api/admin/post/list`  
 
 **Response:**  
-- `200 OK` – Returns an array of posts
+- `Status Code` – 200
+- `Message` – Post list
+- `allPosts` – array of posts
 
 ---
 
-## 3. 🔍 Get Post Details  
-**Endpoint:** `GET /post/:id`  
+## 3. 🔍 Get Post Details
+**Method:** `GET`   
+**Endpoint:** `/api/admin/post/:id`  
 **Params:**
 - `id` – Post ID
 
 **Response:**
-- `200 OK` – Post detail data
-- `404 Not Found` – If post does not exist
+- `Status Code` – 200
+- `Message` – Post list
+- `post` – object of post details
 
 ---
 
-## 4. ❌ Delete Post  
-**Endpoint:** `DELETE /post/delete/:id`  
+## 4. ❌ Delete Post 
+**Method:** `DELETE`  
+**Endpoint:** `/api/admin/post/delete/:id`  
 **Params:**
 - `id` – Post ID
 
 **Response:**
-- `200 OK` – Confirmation message
-- `404 Not Found` – If post does not exist
+- `Status Code` – 200
+- `Message` – Post deleted
 
 ---
 
 ## 5. ♻️ Update Post  
-**Endpoint:** `PATCH /post/update/:id`  
+**Method:** `PATCH` 
+**Endpoint:** `/api/admin/post/update/:id`  
 **Headers:**
 - `Content-Type: multipart/form-data`
 
@@ -67,8 +74,8 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 - `image` – _File_ (Upload new image)
 
 **Response:**
-- `200 OK` – Updated post data
-- `404 Not Found` – If post does not exist
+- `Status Code` – 200
+- `Message` – Post updated
 
 ---
 
@@ -79,5 +86,5 @@ This document provides a comprehensive guide for working with the Post APIs, inc
 
 ---
 
-**Developed by:** ✨ *Gautam Technologies*  
-**Base URL:** `https://yourdomain.com/api` (Replace with actual base URL)
+**Developed by:** ✨ *Anish Kumar*  
+**Base URL:** `https://test-api-pz0o.onrender.com/`
